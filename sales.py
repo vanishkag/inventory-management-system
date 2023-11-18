@@ -29,7 +29,7 @@ class saleclass:
         scrolly.pack(side=RIGHT,fill=Y)
         scrolly.config(command=self.sal.yview)
         self.sal.pack(fill=BOTH,expand=1)
-        #self.sal.bind("<ButtonRelease-1>",self.get_data)
+        self.sal.bind("<ButtonRelease-1>",self.get_data)
         
 #bill area
         bFrame=Frame(self.root,bg="white")
